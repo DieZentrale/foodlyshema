@@ -1,0 +1,17 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[AppUsers](
+	[uid] [uniqueidentifier] NOT NULL,
+	[username] [varchar](50) NOT NULL,
+	[role] [varchar](20) NOT NULL,
+	[email] [varchar](50) NOT NULL,
+	[fullname] [varchar](100) NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[AppUsers] ADD  CONSTRAINT [PK_AppUsers] PRIMARY KEY CLUSTERED 
+(
+	[uid] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
