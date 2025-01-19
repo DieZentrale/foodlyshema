@@ -3,7 +3,7 @@ ALTER TABLE [dbo].[MealRegistrations]
         [paymentReceived] BIT NOT NULL DEFAULT 0,
         [paymentReceivedAt] DATETIME NULL,
         [sick] BIT NOT NULL DEFAULT 0,
-        [createdAt] DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        [createdAt] DATETIME NOT NULL DEFAULT CURRENT_DATE,
         [pickedUpAt] DATETIME NULL;
 
 
