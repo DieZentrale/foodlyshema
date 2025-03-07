@@ -1,2 +1,2 @@
 ALTER TABLE [dbo].[AppUsers]
-    ADD [credit] INT NULL;
+    ADD [credit] INT NOT NULL DEFAULT 0;
